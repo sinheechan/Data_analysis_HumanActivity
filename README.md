@@ -8,8 +8,14 @@ Kaggle 데이터 분석 과정을 담은 내용입니다.
 
 ## WorkFlow Summary
 
-LogisticRegression 모델을 활용한 데이터 예측
+- DecisionTree, RandomForest 모델 별 파라미터 Defalt 값 정확도 측정
 
-StandardScaler 숫자데이터 스케일링을 적용
+  : DecisionTree : 0.8571, RandomForest : 0.9220
 
-임계값(threshold)을 변화시키면서 분류 모델의 평가를 수행 : AUC 0.84
+- 각 모델 별 파라미터 최적화 값을 도출학기 위해 GridSearchCV를 활용한 max_depth 값에 따른 정확도 측정
+
+- 각 파라미터 별 최고 정확도를 도출한 파라미터값에 대한 각 모델 별 정확도 측정
+
+  : DecisionTree : 0.8771, RandomForest : 0.9231
+
+- 파라미터 별 Feature 중요도의 변화 기록 후 모델 개선 반영 예정
